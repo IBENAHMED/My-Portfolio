@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reda IBENAHMED</title>
+    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+</head> 
+
+<body class="light-mode">
+
+    <!-------------------------- Header Area -------------------------->
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+               
+                <a href="" class="logo">
+                    <img src="files/signaturecropped.png" alt="" class="signature">
+                    <i class="fa fa-bolt"></i>
+                </a>
+                   
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Services</a></li>
+                    <li class="light-mode">
+                        <!-- Dark Mode Toggle -->
+                         <div style="display: flex; align-items: center;">
+                            <input class="checkbox" type="checkbox" id="darkModeToggle" style="display: none;">
+                            <label for="darkModeToggle" class="toggle"></label>
+                        </div>
+                    </li>
+                </li>
+                </ul>
+                <div class="light-mode menu_icon">
+                    <li class="other-toggle"></li>
+                    <!-- Another Toggle -->
+                     <div style="display: flex; align-items: center;">
+                        <input class="checkbox" type="checkbox" id="otherToggle" style="display: none;">
+                        <label for="otherToggle" class="toggle"></label>
+                    </div>
+                </div>               
+                 <!-- <li class="light-mode menu_icon">
+                         <div style="display: flex; align-items: center;">
+                            <input class="cc" type="checkbox" id="darkModeToggle" style="display: none;">
+                            <label for="darkModeToggle" class="toggles"></label>
+                        </div>
+                    </li> -->
+            </div>
+        </div> 
+    </header>
+ 
+    <!-------------------------- Home Page -------------------------->
+    <div class="FirstElement" id="home">
+        <div class="profile-photo">
+            <img src="files/photo!!.png" alt="profile picture">
+        </div>
+        <div class="profile-text">
+            <h1>Reda IBENAHMED</h1><br>
+            <span>With over a year of experience, I specialize in creating immersive web experiences using Three.js and the MERN stack (MongoDB, Express.js, React.js, Node.js, CSS). I leverage Three.js and GSAP for dynamic 3D applications and use Next.js for scalable, responsive web apps and APIs.</span>
+            
+            <div class="btn-group">
+                <a href="files/SowndharResume.pdf" class="btn   active">Download CV</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i class="fa fa-envelope"></i></a>
+                <a target="_blank" href="https://github.com/IBENAHMED"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa fa-code"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/reda-ibenahmed-9856222b5/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------- Services -------------------------->
+    <section class="project-content" id="projects">
+        <div class="container">
+            <div class="project-title">
+                <h4>Services</h4>
+                <p>Discover my services, where creativity meets innovation</p>
+            </div>
+            <div class="projects">
+               
+                <div class="project">
+                    <i class="fa fa-coffee"></i>
+                    <h4>Front-End Web Developer</h4>
+                    <span>Crafting visually stunning and highly functional user interfaces using the latest front-end technologies. From responsive design to seamless user experiences, I bring your ideas to life with a focus on modern design principles and user-centric solutions.</span>
+                </div>
+                
+                <div class="project">
+                    <i class="fa fa-car"></i>
+                    <h4>3D Developer</h4>
+                    <span>Developing immersive 3D experiences using cutting-edge technologies such as Three.js and WebGL. Whether it's creating interactive 3D visualizations or integrating complex 3D models into web applications, I deliver innovative solutions that captivate and engage users.</span>
+                </div>
+                
+                <div class="project">
+                    <i class="fa fa-desktop"></i>
+                    <h4>Back-End Web Developer</h4>
+                    <span>Build robust and scalable back-end systems with my expertise in back-end development. I focus on creating efficient server-side solutions using modern technologies and frameworks, ensuring that your applications run smoothly and securely. Whether it's handling complex data operations or developing APIs, I provide reliable back-end solutions tailored to your needs.</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+     
+    <!-------------------------- JS -------------------------->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    
+    <!-------------------------- Footer section -------------------------->
+   <footer class="footer">
+    <small class="copyright">&copy; Copyright 2024. All rights reserved.</small>
+   </footer>
+
+</body>
+</html>
