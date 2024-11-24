@@ -296,9 +296,6 @@ profile-photo .img {
   font-size: 12px;
 }
 
-
-
-
 /*------------------- Responsive Design on small screen -------------------*/
 
 /* Medium layout */
@@ -398,19 +395,11 @@ profile-photo .img {
     height: 200px;
   }
 
-  /* .profile-text {
-    max-width: 750px;
-    display: flex;
-    flex-direction: column;
-  } */
-
   .profile-text h5 {
-    /* color: #e5e5e5; */
     font-size: 12px;
   }
 
   .profile-text h1 {
-    /* color: #fed700; */
     font-size: 1.5rem;
   }
 
@@ -425,8 +414,6 @@ profile-photo .img {
   }
 }
 
-/* dark mode */
-/* Basic Styles */
 /* Basic Styles */
 body {
   font-family: Arial, sans-serif;

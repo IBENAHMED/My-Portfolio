@@ -110,17 +110,14 @@ function updateActiveSection() {
   });
 }
 
-// Get the checkbox inputs
 const darkModeToggle = document.getElementById('darkModeToggle');
 const otherToggle = document.getElementById('otherToggle');
 
-// Check for dark mode preference in local storage
 if (localStorage.getItem('darkMode') === 'enabled') {
   document.body.classList.add('dark-mode');
   darkModeToggle.checked = true;
 }
 
-// Toggle dark mode on checkbox change
 darkModeToggle.addEventListener('change', function () {
   if (darkModeToggle.checked) {
     document.body.classList.add('dark-mode');
@@ -131,7 +128,6 @@ darkModeToggle.addEventListener('change', function () {
   }
 });
 
-// Add custom functionality for the other toggle
 otherToggle.addEventListener('change', function () {
   if (otherToggle.checked) {
     document.body.classList.add('dark-mode');
