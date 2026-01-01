@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-  //sticky header
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
       $(".header-area").addClass("sticky");
@@ -8,7 +7,6 @@ $(document).ready(function () {
       $(".header-area").removeClass("sticky");
     }
 
-    // Update the active section in the header
     updateActiveSection();
   });
 
@@ -44,7 +42,6 @@ $(document).ready(function () {
   });
 
 
-  //Initial content revealing js
   ScrollReveal({
     distance: "100px",
     duration: 2000,
@@ -64,14 +61,13 @@ $(document).ready(function () {
     origin: "bottom"
   });
 
-  //contact form to excel sheet
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzUSaaX3XmlE5m9YLOHOBrRuCh2Ohv49N9bs4bew7xPd1qlgpvXtnudDs5Xhp3jF-Fx/exec';
   const form = document.forms['submitToGoogleSheet']
   const msg = document.getElementById("msg")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    fetch(scriptURL, {method: 'POST', body: new FormData(form)})
       .then(response => {
         msg.innerHTML = "Message sent successfully"
         setTimeout(function () {
@@ -87,14 +83,12 @@ $(document).ready(function () {
 function updateActiveSection() {
   var scrollPosition = $(window).scrollTop();
 
-  // Checking if scroll position is at the top of the page
   if (scrollPosition === 0) {
     $(".header ul li a").removeClass("active");
     $(".header ul li a[href='#home']").addClass("active");
     return;
   }
 
-  // Iterate through each section and update the active class in the header
   $("section").each(function () {
     var target = $(this).attr("id");
     var offset = $(this).offset().top;
@@ -112,6 +106,7 @@ function updateActiveSection() {
 
 const darkModeToggle = document.getElementById('darkModeToggle');
 const otherToggle = document.getElementById('otherToggle');
+document.getElementById('year').textContent = new Date().getFullYear();
 
 if (localStorage.getItem('darkMode') === 'enabled') {
   document.body.classList.add('dark-mode');
